@@ -19,5 +19,7 @@ Route::post('/upload', [\App\Http\Controllers\FileUploadController::class, 'uplo
 
 Route::get('/library_user/{id}', [\App\Http\Controllers\LibraryUserController::class, 'show'])->where(['id' => '[0-9]+']);
 
+Route::get('/new_user', [App\Http\Controllers\MyuserController::class, 'showUser']);
+
 
 
